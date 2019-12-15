@@ -1,11 +1,11 @@
 module.exports = {
     environment: 'dev',
     database: {
-        dbName: 'wxapp',
+        dbName: 'cms',
         host: 'localhost',
         port: 3306,
         user: 'root',
-        password: 'password'
+        password: '054331'
     },
     security: {
         secretKey: "abcdefg",
