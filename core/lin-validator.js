@@ -1,3 +1,9 @@
+/**
+ * Lin-Validator v1
+ * 作者：7七月
+ * 微信公众号：林间有风
+ */
+
 const validator = require('validator')
 const {
     ParameterException
