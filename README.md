@@ -4,8 +4,6 @@
 [![sequelize](https://img.shields.io/badge/sequelize-%5E5.6.1-brightgreen.svg)](https://www.npmjs.com/package/sequelize)
 [![mysql2](https://img.shields.io/badge/mysql2-%5E1.6.5-brightgreen.svg)](https://www.npmjs.com/package/mysql2)
 
-Node.js Koa2 实战开发微信小程序服务端API接口。
-
 ## 数据库
 启动项目前一定要在创建好 `wxapp` 数据库。
 ```
@@ -49,12 +47,4 @@ Koa服务端编程、异步编程、面向对象编程。
 - [更多介绍..](./doc/project.md)
 
 
-## 接口v1
-
-- [X] [用户接口](./doc/user.md)
-- [x] [正在开发中，敬请期待..](###)
-
-## 项目来源与正版教程
-- 请支持正版教程：[《纯正商业级应用－Node.js Koa2开发微信小程序服务端》](https://s.imooc.com/SHHXs2R), by 慕课网：7七月老师
-- [开源：lin-cms-koa](https://github.com/TaleLin/lin-cms-koa), by TaleLin Team
 

@@ -1,7 +1,7 @@
 const util = require('util')
 const axios = require('axios')
 
-const {User} = require('../models/user')
+const {User} = require('../models/login')
 const {generateToken} = require('../../core/util')
 const {Auth} = require('../../middlewares/auth')
 

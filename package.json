@@ -1,7 +1,7 @@
 {
   "name": "nodejs-koa2-wxapp",
   "version": "1.0.0",
-  "description": "Node.js + Koa2实战小程序项目",
+  "description": "Node+Koa2",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app.js",

@@ -3,7 +3,7 @@ const {
     LinValidator
 } = require('../../core/lin-validator-v2')
 
-const {User} = require('../models/user')
+const {User} = require('../models/login')
 
 class RegisterValidator extends LinValidator {
     constructor() {
