@@ -5,7 +5,7 @@ const { Client } = require('@models/client')
 // const {handleResult} = require('../../lib/helper')
 
 const router = new Router({
-  prefix: "/v1/client"
+  prefix: "/client/v1"
 })
 
 router.del('/delete/:id', async (ctx, next) => {

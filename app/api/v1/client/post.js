@@ -5,10 +5,10 @@ const { Client } = require('@models/client')
 // const {handleResult} = require('../../lib/helper')
 
 const router = new Router({
-  prefix: "/v1/client"
+  prefix: "/client/v1"
 })
 
-router.post('/add', async (ctx, next) => {
+router.post('/addClient', async (ctx, next) => {
   const user = ctx.request.body
   const r = await Client.clientAdd(user)
   ctx.body = r
