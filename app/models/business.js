@@ -1,5 +1,3 @@
-const bcrypt = require('bcryptjs')
-
 const { sequelize } = require('../../core/db');
 const { Sequelize, Model } = require('sequelize');
 

@@ -1,16 +1,24 @@
-const bcrypt = require('bcryptjs')
-
 const { sequelize } = require('../../core/db');
+// const { Business } = require('./business');
 const { Sequelize, Model } = require('sequelize');
 
 // 定义用户模型
 class Client extends Model {
   // 用户列表
+  // StudentModel.belongsTo(ClassModel, {as: 'cla', foreignKey: 'cId', targetKey: 'classId'});
   static async clientRead(params) {
     // 查询用户
     const { offset = 0, limit = 10, cond = {}} = params
     const { count, rows } = await Client.findAndCountAll({
       where: cond,
+      order: [['id', 'DESC']],
+      // include:[
+      //   { // include关键字表示关联查询
+      //     model: Business, // 指定关联的model
+      //     as: 'cla', // 由于前面建立映射关系时为class表起了别名，那么这里也要与前面保持一致，否则会报错
+      //     attributes: [['name','className'], 'rank'], // 这里的attributes属性表示查询class表的name和rank字段，其中对name字段起了别名className
+      //   }
+      // ],
       offset,
       limit
     })
