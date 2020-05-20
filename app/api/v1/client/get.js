@@ -42,6 +42,7 @@ router.get('/read', async (ctx, next) => {
   const data = await getResClient(resClient, business)
   ctx.body = {
     data,
+    code: 200,
     mag: "成功"
   }
 })

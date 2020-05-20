@@ -6,11 +6,15 @@ class Business extends Model {
   // 用户列表
   static async businesRead(params) {
     // 查询用户
-    const { offset = 0, limit = 10, cond = {}} = params
+    const { offset = 0, limit = 1000, all = false, cond = {}} = params
+    const condition = {}
+    if (!all) {
+      condition.offset = offset
+      condition.limit = limit
+    }
     const { count, rows } = await Business.findAndCountAll({
       where: cond,
-      offset,
-      limit
+      ...condition
     })
     return { count, rows }
   }

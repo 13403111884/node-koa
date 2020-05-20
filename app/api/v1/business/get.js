@@ -24,13 +24,16 @@ router.get('/read', async (ctx, next) => {
     })
   }
   const read = { cond }
-  if (!all) {
+  if (all) {
+    read.all = true
+  } else {
     read.offset = +(pageSize * (current - 1))
     read.limit = +pageSize
   }
   const r = await Business.businesRead(read)
   ctx.body = {
     data: r,
+    code: 200,
     mag: "成功"
   }
 })
