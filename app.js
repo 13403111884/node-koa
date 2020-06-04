@@ -11,7 +11,7 @@ const app = new Koa()
 app.use(
   cors({
     origin: function (ctx) { //设置允许来自指定域名请求
-      const whiteList = ['http://www.elegantwalking.com', 'http://crm.elegantwalking.com'] //可跨域白名单
+      const whiteList = [''] //可跨域白名单
       let url = ctx.header.referer.substr(0, ctx.header.referer.length - 1)
       if (whiteList.includes(url)) {
         return url //注意，这里域名末尾不能带/，否则不成功
